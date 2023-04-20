@@ -1,3 +1,4 @@
+
 :root {
     --primary-text-color: #434455;
     --title-text-color: #2E2F42;
@@ -13,12 +14,20 @@
 
 body {color:var(--primary-text-color);
 background-color: var(--white-background);
-
 font-family: "Roboto", sans-serif;
 letter-spacing: 0.02em;}
 
+/* Утіліти*/
+
 .list {list-style: none;}
 .link {text-decoration: none;}
+
+.container {
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: tomato;
+}
 
 /* nav-menu */
 .nav-logo {color: var(--primary-brand-color);
@@ -93,7 +102,7 @@ letter-spacing: 0.02em;}
 
 .section {background-color: var(--light-color);}
 
-.section-item {
+.section-card {
     background-color: #FFFFFF;
 }
 
