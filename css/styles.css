@@ -40,8 +40,8 @@ letter-spacing: 0.02em;}
 
 .container {
     max-width: 1158px;
-    padding: 0, 15px;
-    margin: 0, auto;
+    padding: 0 15px;
+    margin: 0 auto;
     outline: 2px solid tomato;
 }
 
@@ -90,32 +90,35 @@ margin-bottom: 48px;}
 
 
 /* Section*/
-.section-pretitle {visibility: hidden;}
-
+.section-pretitle {margin-top: 0;}
 .section-title {color: var(--title-text-color);
 
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-top: 0;
 }
 
 .section-text {color: var(--primary-text-color);
     
     font-size: 16px;
     line-height: 1.5;
-    letter-spacing: 0.02em;}
+    letter-spacing: 0.02em;
+    margin-top: 0;
+    margin-bottom: 0;}
 
 
 /* Feachers */
-.feachers-title {color: var(--title-text-color);
+.feachers-pretitle {color: var(--title-text-color);
 
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
     text-transform: capitalize;
-    letter-spacing: 0.02em;}
+    letter-spacing: 0.02em;
+    margin-top: 0;}
 
 /* Our Team */
 
@@ -132,7 +135,8 @@ margin-bottom: 48px;}
     line-height: 1.11;
     text-align: center;
     text-transform: capitalize;
-    letter-spacing: 0.02em;}
+    letter-spacing: 0.02em;
+    margin-top: 0;}
 
 /* Footer */
 .footer {background-color: var(--title-text-color);}
@@ -154,11 +158,9 @@ margin-bottom: 48px;}
     line-height: 1.5;}
 
 /* Button */
-.pretitle-buttons {visibility: hidden;}
+.pretitle-buttons {margin-top: 0;}
 
-.button {color: var(--title-text-color); 
-    background-color: var(--white-background);
-
+.button {
 font-family: "Roboto",sans-serif;
 letter-spacing: 0.04em;
 font-family: inherit;
@@ -215,4 +217,5 @@ font-weight: 400;
 
     font-weight: 400;
     font-size: 16px;
-    line-height: 1.5;}
+    line-height: 1.5;
+    margin-bottom: 0;}
