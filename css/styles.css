@@ -24,6 +24,11 @@ h1, h2, h3, h4, h5, h6, p, ul {
     padding: 0;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 .list {
     list-style: none;
 }
@@ -112,7 +117,8 @@ font-size: 16px;
 line-height: 1.5;
 }
 
-.address-link:hover, .address-link:focus {color: var(--pressed-state-color);}
+.address-link:hover, .address-link:focus {
+    color: var(--pressed-state-color);}
 
 /* Hero*/
 .hero {background-color: var(--title-text-color);
