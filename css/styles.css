@@ -9,6 +9,7 @@
     --accent-color: #E7E9FC;
     --light-color: #F4F4FD;
     --white-background: #FFFFFF;
+    --card-gap: 24px;
 }
 
 
@@ -51,7 +52,8 @@ img {
 .container {
     max-width: 1158px;
     padding: 0 15px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
     outline: 2px solid tomato;
 }
 
@@ -136,18 +138,33 @@ margin-bottom: 45px;
 }
 
 /* Section*/
-.section-pretitle {margin-top: 0;}
+.section-about {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.section-list {
+    display: flex;
+    margin-right: calc( -1 * var(--card-gap));
+}
+
+.section-list > .item {
+    flex-basis: calc(100% / 4 - var(--card-gap));
+    margin-right: var(--card-gap);
+}
+
 .section-title {color: var(--title-text-color);
 
+    
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     margin-bottom: 8px;
-
 }
 
 .section-text {color: var(--primary-text-color);
+    
     
     font-size: 16px;
     line-height: 1.5;
@@ -166,12 +183,22 @@ margin-bottom: 45px;
     letter-spacing: 0.02em;
     margin-bottom: 72px;}
 
+    .feachers-list {
+        display: flex;
+        margin-right:calc( -1 * var(--card-gap));
+    }
+
+    .feachers-list > .item {
+        flex-basis: calc(100% / 3 - var(--card-gap));
+        margin-right: var(--card-gap);
+    }
+
+
 /* Our Team */
 
 .section {
 padding-top: 120px;
-padding-bottom: 120px;
-text-align: center;}
+padding-bottom: 120px;}
 
 .bg {
     background-color: var(--light-color);
@@ -216,24 +243,28 @@ padding-bottom: 100px;}
 .pretitle-buttons {margin-top: 0;}
 
 .button {
+display: inline-block;
+padding: 12px 24px;
+margin-left: auto;
+margin-right: auto;
+border-radius: 4px;
+border: 1px solid transparent;
+text-align: center;
+
 font-family: "Roboto",sans-serif;
 letter-spacing: 0.04em;
 font-family: inherit;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
-cursor: pointer;
+cursor: pointer;}
 
-display: inline-block;
-padding: 12px 24px;
-border-radius: 4px;
-border: 1px solid transparent;
-text-align: center;}
-
-.button.primary {color: var(--white-background);
-background-color: var(--primary-brand-color);
-
+.button.primary {
 padding: 16px 32p;
+min-width: 169px;
+
+color: var(--white-background);
+background-color: var(--primary-brand-color);
 }
 
 .button.primary:hover,
