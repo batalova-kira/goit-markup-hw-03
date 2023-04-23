@@ -12,6 +12,7 @@
     --indent: 24px;
     --item-about: 4;
     --item-example: 3;
+    --item-team: 4;
 }
 
 
@@ -205,12 +206,24 @@ margin-bottom: 45px;
 padding-top: 120px;
 padding-bottom: 120px;}
 
+.section-item {display: flex;}
+
 .bg {
     background-color: var(--light-color);
 }
 
-.section-card {
+.li-card {
     background-color: var(--white-background);
+    flex-basis: calc(100% - var(--indent) * (var(--item-team) - 1) / var(--item-team));
+    margin-right: var(--indent);
+}
+
+.li-card.item:nth-child(4) {
+    margin-right: 0;
+}
+
+.section-content {
+    padding: 32px 16px;
 }
 
 .section-subtitle {color: var(--title-text-color);
