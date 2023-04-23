@@ -9,7 +9,9 @@
     --accent-color: #E7E9FC;
     --light-color: #F4F4FD;
     --white-background: #FFFFFF;
-    --card-gap: 24px;
+    --indent: 24px;
+    --item-about: 4;
+    --item-example: 3;
 }
 
 
@@ -112,8 +114,6 @@ line-height: 1.5;
 }
 
 .address-link {
-
-
 color: var(--primary-text-color);
 font-size: 16px;
 line-height: 1.5;
@@ -145,12 +145,15 @@ margin-bottom: 45px;
 
 .section-list {
     display: flex;
-    margin-right: calc( -1 * var(--card-gap));
 }
 
 .section-list > .item {
-    flex-basis: calc(100% / 4 - var(--card-gap));
-    margin-right: var(--card-gap);
+    flex-basis: calc(100% - var(--indent) * (var(--item-about) - 1) / var (--item-about));
+    margin-right: var(--indent);
+
+}
+.section-list > .item:nth-child(4n) {
+    margin-right: 0;
 }
 
 .section-title {color: var(--title-text-color);
@@ -185,14 +188,16 @@ margin-bottom: 45px;
 
     .feachers-list {
         display: flex;
-        margin-right:calc( -1 * var(--card-gap));
     }
 
     .feachers-list > .item {
-        flex-basis: calc(100% / 3 - var(--card-gap));
-        margin-right: var(--card-gap);
-    }
+        flex-basis: calc(100% - var(--indent) * (var(--item-example) - 1) / var(--item-example));
+        margin-right: var(--indent);}
+    
 
+.feachers-list > .item:nth-child(3n) {
+    margin-right: 0;
+}
 
 /* Our Team */
 
