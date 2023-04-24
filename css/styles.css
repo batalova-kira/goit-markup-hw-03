@@ -279,12 +279,14 @@ margin-right: auto;}
     max-width: 264px;}
 
 /* Button */
-.pretitle-buttons {margin-bottom: 96px;}
+.portfolio {
+padding-top: 96px;
+padding-bottom: 120px;
+}
 
 .buttons {
     display: flex;
     margin-bottom: 72px;
-    margin-top: 96px;
     justify-content: center;
 }
 
@@ -323,9 +325,9 @@ background-color: var(--primary-brand-color);
 
 .button.secondary {color: var(--primary-brand-color);
 background-color: var(--light-color);
-border-color: var(--accent-color);
+border: solid var(--accent-color);
 flex-basis: calc( 100% - var(--indent) * (var(--item-button) - 1) / var(--item-button));
-margin-right: var(--indent);}
+margin-right: 24px;}
 
 .button.secondary:nth-child(5n) {
     margin-right: 0;
@@ -335,6 +337,7 @@ margin-right: var(--indent);}
 .button.secondary:focus {
     color: var(--white-background);
     background-color: var(--pressed-state-color);
+    border: 1px solid transparent;
 }
 
 /* Examples */
@@ -342,12 +345,12 @@ margin-right: var(--indent);}
 display: flex;
 flex-wrap: wrap;
 margin-right: calc(-1 * var(--indent));
-padding-bottom: 120px;}
+}
 
 .example-item {
-flex-basis: calc( 100% / var(--item-example) - var(--indent)) ;
+flex-basis: calc((100% - 48px) / 3) ;
 margin-right: var(--indent);
-margin-bottom: var(--indent);}
+margin-bottom: 48px;}
 
 .example-item:nth-child(3n) {
     margin-right: 0;
@@ -364,10 +367,13 @@ margin-bottom: var(--indent);}
 .example-content {
     padding: 32px 16px;
     justify-content: center;
+    border: 1px solid var(--accent-color);
 }
 
-.example-title {color: var(--title-text-color);
+.example-title {
+margin-bottom: 8px;
 
+color: var(--title-text-color);
 font-weight: 500;
 font-size: 20px;
 line-height: 1.2;
