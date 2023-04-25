@@ -290,6 +290,14 @@ padding-bottom: 120px;
     margin-bottom: 72px;
     justify-content: center;
 }
+ .button-item {
+    flex-basis: calc(100% - 96px / 5);
+    margin-right: 24px;
+ }
+
+ .button.item:nth-child(5n) {
+     margin-right: 0;
+ }
 
 .button {
 display: block;
@@ -324,14 +332,10 @@ background-color: var(--primary-brand-color);
     background-color: var(--pressed-state-color);
 }
 
-.button.secondary {color: var(--primary-brand-color);
+.button.secondary {
+color: var(--primary-brand-color);
 background-color: var(--light-color);
 border: 1px solid var(--accent-color);
-flex-basis: calc( 100% - 96px / 5);
-margin-right: 24px;}
-
-.button.secondary:nth-child(5n) {
-    margin-right: 0;
 }
 
 .button.secondary:hover,
