@@ -327,7 +327,7 @@ background-color: var(--primary-brand-color);
 .button.secondary {color: var(--primary-brand-color);
 background-color: var(--light-color);
 border: 1px solid var(--accent-color);
-flex-basis: calc( 100% - var(--indent) * (var(--item-button) - 1) / var(--item-button));
+flex-basis: calc( 100% - 96px / 5);
 margin-right: 24px;}
 
 .button.secondary:nth-child(5n) {
@@ -345,7 +345,6 @@ margin-right: 24px;}
 .example {
 display: flex;
 flex-wrap: wrap;
-margin-right: calc(-1 * var(--indent));
 }
 
 .example-item {
@@ -363,6 +362,7 @@ margin-bottom: 48px;}
 
 .example-link {
     font-family: inherit;
+    display: inline-block;
 }
 
 .example-content {
